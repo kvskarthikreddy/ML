@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the data
-df = pd.read_excel('Trend Dataset.xlsx')
+df = pd.read_excel('Search Rank Analysis/Trend Dataset.xlsx')
 
 # Display the first few rows of the dataframe to understand its structure
 # Make sure to replace this with appropriate checks or exploration of the data.

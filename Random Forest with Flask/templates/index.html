@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML API</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login">
+        <h1>Flower Class Prediction</h1>
+
+        <!-- Form to take inputs for prediction -->
+        <form action="{{ url_for('predict') }}" method="post">
+            <input type="text" name="Sepal_Length" placeholder="Sepal_Length" required="required" />
+            <input type="text" name="Sepal_Width" placeholder="Sepal_Width" required="required" />
+            <input type="text" name="Petal_Length" placeholder="Petal_Length" required="required" />
+            <input type="text" name="Petal_Width" placeholder="Petal_Width" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+
+        <br><br>
+        <!-- Display prediction result -->
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</body>
+</html>

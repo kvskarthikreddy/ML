@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Load dataset
-df = pd.read_csv("delaney_solubility_with_descriptors.csv")
+df = pd.read_csv("Linear Regression/delaney_solubility_with_descriptors.csv")
 
 # Target variable and features
 y = df['logS']
